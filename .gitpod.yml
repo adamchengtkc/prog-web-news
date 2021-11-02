@@ -1,0 +1,19 @@
+tasks:
+  - name: Install
+    init: npm install
+
+ports:
+  - port: 5000
+    onOpen: open-preview
+
+gitConfig:
+  alias.co: checkout
+  alias.br: branch
+  alias.ci: commit
+  alias.st: status
+  pull.rebase: merges
+
+vscode:
+  extensions:
+    - dbaeumer.vscode-eslint
+    - yandeu.five-server
